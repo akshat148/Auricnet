@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auricnet</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Video Background -->
+  <video autoplay muted loop id="bg-video">
+    <source src="bg.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Content -->
+  <div class="container">
+    <div id="name">Auricnet</div>
+    <div id="subheading">Your Complete Digital World, Simplified</div>
+    <div id="squares">
+      <div class="square-container">
+        <div class="square">
+            <div class="square-text">
+                <h3>Web Development</h3>
+                <ul>
+                    <li>Web Designing</li>
+                  <li>Software Development</li>
+                  <li>Digital Marketing</li>
+                  <li>UI/UX Designing</li>
+                </ul>
+              </div>
+        </div>
+        <div class="text-plate">Web Solutions</div>
+      </div>
+      <div class="square-container">
+        <div class="square">
+          <div class="square-text"> 
+            <h3>Hosting at <br> ₹999 ONLY </h3>
+            <ul>
+            
+                <li>Affordable. Reliable. Unstoppable.</li>
+                <li>For Small/Medium Bussiness</li>
+                <li>Go Live</li>
+
+
+        </ul></div>
+        </div>
+        <div class="text-plate">Hosting Solutions</div>
+      </div>
+      <div class="square-container">
+        <div class="square">
+          <div class="square-text"> 
+            <h3>Consult With Us </h3>
+            <ul>
+            
+          <li>Confused About What to Sell or How to Start?</li>
+          <li>We’re Here to Simplify Your Business Journey!  </li>
+        </ul></div>
+        </div>
+        <div class="text-plate">Consulting Services</div>
+      </div>
+    </div>
+    <button id="contactButton" class="b1">Contact Now</button>
+
+  </div>
+  <div id="contactPopup" class="popup">
+    <div class="popup-content">
+      <span id="closePopup" class="close">&times;</span>
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name2" name="name" required><br>
+        
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="phone">Your Contact No:</label>
+        <input type="phone" id="phone" name="phone" required><br>
+        
+        <label for="service">Type of Service:</label>
+        <select id="service" name="service">
+          <option value="web-development">Web Development</option>
+          <option value="hosting">Hosting</option>
+          <option value="consulting">Consulting</option>
+        </select><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br>
+        
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
